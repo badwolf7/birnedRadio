@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- ==================================================
+	 Holly Springsteen
+
+	 Intuitive design is how we give the user new superpowers.
+	================================================== -->
+	<head>
+	<!-- Meta -->
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="birned, radio, youtube, spotify, aggregator, holly, springsteen, music, songs, online radio" />
+
+		<!-- Site Verification -->
+		<!-- Google -->
+		
+		<!-- Bing -->
+		
+
+		<!-- Facebook OG meta -->
+		<meta property="og:title" content="Birned Radio" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="https://farm3.staticflickr.com/2948/15474757755_065d708842_z.jpg" />
+		<meta property="og:url" content="http://www.birnedradio.com/" />
+		<meta property="og:site_name" content="Birned Radio" />
+		<meta property="og:type" content="website" />
+
+		<!-- Mobile Settings -->
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, width=device-width" />
+		
+	<!-- Title -->
+		<title>Birned Radio</title>
+
+	<!-- CSS -->
+		<link rel="stylesheet" type="text/css" rel="stylesheet" href="/assets/font-awesome-4.3.0/css/font-awesome.min.css">
+
+	<!-- Favicon -->
+		<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+	<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+        
+	<!-- JavaScript -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="/assets/js/modernizr.custom.05501.js"></script>
+		<script type="text/javascript" src="/assets/js/selectivizr-min.js"></script>
+		<script type="text/javascript" src="/assets/js/html5shiv.js"></script>
+		<script type="text/javascript" src="/assets/js/fastclick.js"></script>
+
+	<!-- Foundation -->
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" rel="stylesheet" href="/assets/css/foundation.min.css">
+		<!-- JavaScript -->
+		<script type="text/javascript" src="/assets/js/foundation.min.js"></script>
+	</head>
+	<body>
+		<div id="wrapper" class="wrapper">
+			<header class="small-12">
+				<div class="small-3">
+					<a href="/">
+						<h1>Birned Radio</h1>
+						<% include logo.svg %>
+					</a>
+				</div>
+				<form action="/search/all" method="GET" role="form" class="small-5">
+					<div class="row collapse postfix-radius">
+						<div class="small-10 columns">
+							<input type="text" name="q" placeholder="What would you like to hear" spellcheck="true">
+						</div>
+						<div class="small-2 columns">
+							<button type="submit" class="fa fa-search"></button>
+						</div>
+					</div>
+				</form>
+				<nav class="small-4">
+					<ul>
+						<li><a href="">Features</a></li>
+						<li><a href="">Help</a></li>
+						<li><a href="/login" data-reveal-id="loginModal"><span class="fa fa-user"></span> Login</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="headerPush"></div>
+
+			<%- body %>
+
+		</div> <!-- wrapper -->
+		<footer id="footer">
+			
+		</footer>
+
+		<div id="loginModal" class="reveal-modal" data-reveal area-labelledby="loginModalTitle" aria-hidden="true" role="dialog">
+			<h2>Login</h2>
+			<form role="form">
+			</form>
+			<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+		</div>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+		
+		<!-- JAVASCRIPT -->
+		<script type="text/javascript" src="/assets/js/ajax.js"></script>
+		<script type="text/javascript" src="/assets/js/main.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+
+	</body>
+</html>

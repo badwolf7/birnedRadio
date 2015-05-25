@@ -1,0 +1,47 @@
+<% layout('templates/layout') -%>
+
+<main id="searchResults" class="searchResults">
+	<section>
+		<div class="titlebar">
+			<h1>"<span class="query"><%= q %></span>"</h1>
+			<p>returns about <%= numResults %> results</p>
+		</div>
+		<div class="corrections">
+			<% if(corrections.list.length > 0){ %>
+			<h3>Did You Mean:</h3>
+			<ul>
+				<% for(var j=0;j<corrections.list.length;j++){ %>
+				<li>
+					<h4><a href="/search/all?q=<%= corrections.list[j] %>"><em><%=  corrections.list[j] %></em></a></h4>
+				</li>
+				<% } %>
+			</ul>
+			<% } %>
+		</div>
+		<ul class="res">
+			<li class="youtube">
+				<div class="src-header">
+					<h2><span class="fa fa-youtube"></span> YouTube</h2>
+					<p>about <%= results.YouTube.pageInfo.totalResults %> results</p>
+				</div>
+				<ul class="results">
+					<% for(var i=0;i<results.YouTube.items.length;i++){ %>
+					<% if(results.YouTube.items[i].id.kind === 'youtube#video'){ %>
+					<li>
+						<a href="">
+							<img src="<%= results.YouTube.items[i].snippet.thumbnails.medium.url %>" alt="<%= results.YouTube.items[i].snippet.title %>">
+							<h3><a href=""><%= results.YouTube.items[i].snippet.title %></a></h3>
+							<% if(results.YouTube.items[i].snippet.channelTitle != ''){ %>
+							<a>@<%= results.YouTube.items[i].snippet.channelTitle %></a>
+							<% } %>
+							<p class="date"><%= results.YouTube.items[i].snippet.publishedAt %></p>
+							<input class="vidId" type="hidden" value="<%= results.YouTube.items[i].id.videoId %>">
+						</a>
+					</li>
+					<% }} %>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<input class="query" type="hidden" value="<%= q %>">
+</main>

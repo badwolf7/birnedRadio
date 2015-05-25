@@ -1,0 +1,47 @@
+header
+	width: 100%
+	background: $white
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 1000
+	box-shadow: 0 1px 3px 0 rgba(32,32,32,.45)
+	div.small-3, form, nav
+		float: left
+		clear: none
+	h1
+		display: none
+		margin: 0
+	svg
+		height: 75px   // default - 100px
+		float: left
+		margin-left: 15px
+	form
+		.row
+			margin-top: 25px
+			input, button
+				margin-bottom: 0
+			input
+				font-size: 1.2em
+				font-family: $exo
+	nav
+		ul
+			float: right
+			margin: 45px 15px 0 0
+			font-size: 1.2em
+			li
+				float: left
+				margin: 0 4px
+				a
+					color: $darkestOrange
+					transition: color .4s ease, border .5s ease
+					padding: 0 5px 7px
+					&:hover
+						color: $orange
+						border-bottom: 4px solid $darkerOrange
+				&:last-child
+					margin: -5px 7px 0 20px
+					font-size: 1.2em
+					a:hover
+						color: $green
+						border-bottom: 4px solid $darkGreen

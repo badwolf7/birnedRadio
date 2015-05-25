@@ -1,0 +1,58 @@
+#searchResults
+	width: 100%
+	.titlebar
+		width: 100%
+		height: 85px
+		h1, p
+			float: left
+		h1
+			margin-left: 15px
+		p
+			margin: 28px 0 0 28px
+	.corrections
+		width: 100%
+		margin-left: 15px
+		ul
+			width: 100%
+			li
+				float: left
+				margin: 0 1%
+				a
+					color: lighten($blue,20%)
+					transition: color .4s ease
+					&:hover
+						color: $blue
+	.res
+		float: left
+		clear: both
+		.src-header
+			width: 100%
+			height: 65px
+			h2, p
+				float: left
+			h2
+				margin-left: 15px
+			p
+				margin: 26px 0 0 26px
+		.results
+			li
+				float: left
+				height: 300px
+				transition: box-shadow .4s ease
+				cursor: pointer
+				&:hover
+					box-shadow: inset 0 0 3px 1px rgba(32,32,32,.5)
+				@media (min-width: $fn-lg)
+					width: 23.5%
+					margin: 0 .5%
+					padding: 1%
+				h3
+					width: 95%
+					font-size: 1.2em
+					white-space: nowrap
+					overflow: hidden
+					text-overflow: ellipsis
+				img
+					max-width: 90%
+					margin: 7px 5%
+					max-height: 200px

@@ -1,0 +1,33 @@
+{
+  "name": "birnedradio",
+  "version": "1.1.1",
+  "authors": [
+    {
+      "name": "Holly Springsteen",
+      "title": "Web Designer/Developer, Graphic Designer, Photographer",
+      "email": "hhspringsteen@gmail.com",
+      "site": "hollyspringsteen.com"
+    }
+  ],
+  "dependencies": {
+    "async": "*",
+    "body-parser": "^1.12.2",
+    "cluster": "^0.7.7",
+    "ejs": "*",
+    "ejs-locals": "*",
+    "express": "3.4.7",
+    "ffmpeg": "0.0.4",
+    "http": "0.0.0",
+    "mongojs": "^0.18.0",
+    "sitemap": "^0.7.4",
+    "soundcloud-node": "0.0.10",
+    "spellchecker": "^2.2.1",
+    "webremix": "^1.1.0",
+    "youtube-node": "^1.2.0"
+  },
+  "devDependencies": {
+    "mocha": "1.15.1",
+    "should": "2.1.1",
+    "supertest": "0.8.2"
+  }
+}

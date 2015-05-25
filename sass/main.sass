@@ -1,0 +1,139 @@
+// COLORS
+$red: #620809
+$darkestOrange: #BF5329
+$darkerOrange: #ED5A2A
+$orange: #F7931C
+$lightOrange: #FABB72
+$blue: #25367A
+$darkGreen: #007134
+$green: #14AF5C
+
+$blackText: #141823
+$black: #1C1A25
+$white: #FFFAF4
+$snowWhite: #FFFAFA
+
+//----- SOCIAL COLORS -----//
+$facebook: #3B5998
+$twitter: #4099FF
+$google-plus: #D34836
+$linkedin: #007BB6
+$pinterest: #CB2027
+$youtube: #BB0000
+$instagram: #517FA4
+$vine: #00BF8F
+$snapchat: #FFFC00
+$quora: #A82400
+$flickr: #FF0084
+$tumblr: #32506D
+$vimeo: #AAD450
+$foursquare: #0072B1
+$github: #333333
+
+.facebook-bg
+	background: $facebook
+	&:hover
+		background: darken($facebook, 10%)
+.twitter-bg
+	background: $twitter
+	&:hover
+		background: darken($twitter, 10%)
+.google-plus-bg
+	background: $google-plus
+	&:hover
+		background: darken($google-plus, 10%)
+.linkedin-bg
+	background: $linkedin
+	&:hover
+		background: darken($linkedin, 10%)
+.pinterest-bg
+	background: $pinterest
+	&:hover
+		background: darken($pinterest, 10%)
+.youtube-bg
+	background: $youtube
+	&:hover
+		background: darken($youtube, 10%)
+.instagram-bg
+	background: $instagram
+	&:hover
+		background: darken($instagram, 10%)
+.vine-bg
+	background: $vine
+	&:hover
+		background: darken($vine, 10%)
+.snapchat-bg
+	background: $snapchat
+	&:hover
+		background: darken($snapchat, 10%)
+.quora-bg
+	background: $quora
+	&:hover
+		background: darken($quora, 10%)
+.flickr-bg
+	background: $flickr
+	&:hover
+		background: darken($flickr, 10%)
+.tumblr-bg
+	background: $tumblr
+	&:hover
+		background: darken($tumblr, 10%)
+.vimeo-bg
+	background: $vimeo
+	&:hover
+		background: darken($vimeo, 10%)
+.foursquare-bg
+	background: $foursquare
+	&:hover
+		background: darken($foursquare, 10%)
+.github-bg
+	background: $github
+	&:hover
+		background: darken($github, 10%)
+
+//---------- MEASUREMENTS ----------//
+// BOOTSTRAP
+$bs-sm: 750px
+$bs-md: 970px
+$bs-lg: 1170px
+// FOUNDATION
+$fn-sm: 280px
+$fn-md: 400px
+$fn-lg: 800px
+
+//---------- FONTS ----------//
+$cabin: 'Cabin', sans-serif
+$exo: 'Exo', sans-serif
+
+//---------- IMPORTS ----------//
+@import header
+@import landing
+@import results
+@import single
+
+
+//---------- GENERAL ----------//
+body, a, a:hover
+	color: $black
+body
+	margin: 0
+	background: $snowWhite
+h1, h2, h3, h4, h5, h6
+	font-family: $exo
+
+p, a, i, b, button
+	font-family: $cabin
+
+ul
+	list-style: none
+	padding: 0
+	margin: 0
+a
+	text-decoration: none
+	color: $black
+	&:hover
+		text-decoration: none
+main, .headerPush
+	width: 100%
+	float:left
+	clear: both

@@ -1,0 +1,28 @@
+<% layout('templates/layout') -%>
+
+<main id="single" class="single">
+	<a href="/search/all?q=<%= q %>" class="button"><span class="fa fa-arrow-left"></span> Back</a>
+	<section class="content">
+		<div class="thmb-hover medium-6 medium-offset-1">
+			<% if(video.items[0].snippet.thumbnails.standard != undefined){ %>
+			<img src="<%= video.items[0].snippet.thumbnails.standard.url %>" alt="<%= video.items[0].snippet.title %>">
+			<% } else if(video.items[0].snippet.thumbnails.high != undefined){ %>
+			<img src="<%= video.items[0].snippet.thumbnails.high.url %>" alt="<%= video.items[0].snippet.title %>">
+			<% } else if(video.items[0].snippet.thumbnails.medium != undefined){ %>
+			<img src="<%= video.items[0].snippet.thumbnails.medium.url %>" alt="<%= video.items[0].snippet.title %>">
+			<% } %>
+			<div class="thmb-click">
+				<p><span class="fa fa-play"></span><br><span class="duration"><%= video.items[0].contentDetails.duration %></span></p>
+			</div>
+		</div>
+		<article class="medium-4 medium-offset-7">
+			<h2><%= video.items[0].snippet.title %></h2>
+			<a>@<%= video.items[0].snippet.channelTitle %></a>
+			<p class="date"><%= video.items[0].snippet.publishedAt %></p>
+			<article class="description">
+				<p><%= video.items[0].snippet.description %></p>
+			</article>
+		</article>
+	</section>
+	<input class="query" type="hidden" value="<%= q %>">
+</main>

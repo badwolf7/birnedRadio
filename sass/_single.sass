@@ -1,0 +1,42 @@
+#single
+	.goBack.button, .content
+		float: left
+		clear: both
+	.content
+		width: 100%
+		.thmb-hover, article.medium-4
+			float: left
+		.thmb-hover
+			position: absolute
+			.thmb-click, img
+				width: 98%
+			.thmb-click
+				visibility: hidden
+				opacity: 0
+				transition: visibility .5s ease, opacity .5s ease
+				background: rgba(32,32,32,.6)
+				cursor: pointer
+				position: absolute
+				z-index: 5
+				p
+					text-align: center
+					line-height: 3.5em
+					.fa-play, .duration
+						color: $white
+					.fa-play
+						font-size: 3em
+						background: $black
+						border-radius: 50%
+						padding: 20px
+						padding-left: 30px
+					.duration
+						font-size: 1.5em
+						text-transform: lowercase
+			&:hover
+				.thmb-click
+					visibility: visible
+					opacity: 1
+		article.medium-4
+			overflow-y: scroll
+			h2
+				margin-top: 0
